@@ -5,47 +5,52 @@
 	<include name="BackButton">
 		<control type="button">
 			<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
-			<width>80</width>
-			<height>80</height>
+			<align>center</align>
+			<width>72</width>
+			<height>64</height>
 			<onclick>Back</onclick>
-			<texturefocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturefocus>
-			<texturenofocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturenofocus>
-			<aspectratio align="center" aligny="center">keep</aspectratio>
-			<animation effect="fade" start="0" end="100" time="150">VisibleChange
-			</animation>
+<!-- 			<texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus> -->
+<!-- 			<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus> -->
+			<font>IconLarge</font>
+			<scroll>false</scroll>
+			<label>$VAR[Icon-Back]</label>
 		</control>
 	</include>
 
 	<include name="MenuButton">
 		<control type="button">
-			<description>Menu button</description>
+		<left>10</left>
+   			<description>Menu button</description>
 			<visible>Skin.HasSetting(Enable.TouchScreen)
 			+ ![Window.IsActive(movieinformation)|Window.IsActive(musicinformation)|Window.IsActive(songinformation)|Window.IsActive(addoninformation)]</visible>
-			<texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus>
-			<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
-			<label>E</label>
+<!-- 			<texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus> -->
+<!-- 			<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus> -->
+			<label>$VAR[Icon-Menu]</label>
 			<align>center</align>
-			<width>80</width>
-			<height>80</height>
+			<width>72</width>
+			<height>64</height>
 			<font>IconLarge</font>
+			<scroll>false</scroll>
 			<onclick>Menu</onclick>
 		</control>
 	</include>
 
 	<include name="FullscreenButton">
 		<control type="button">
+		<left>10</left>
 			<description>fullscreen button</description>
 			<description>full-screen display button</description>
 			<visible>Skin.HasSetting(Enable.TouchScreen)
 				+ [ Player.HasVideo | Player.HasAudio]
 			</visible>
-			<texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus>
-			<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
-			<label>q</label>
+<!-- 			<texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus> -->
+<!-- 			<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus> -->
+			<label>$VAR[Icon-Maximize]</label>
 			<align>center</align>
-			<width>80</width>
-			<height>80</height>
+			<width>72</width>
+			<height>64</height>
 			<font>IconLarge</font>
+			<scroll>false</scroll>
 			<onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
 			<onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
 		</control>
@@ -65,7 +70,7 @@
 			<control type="label" id="10102">
 				<description>Hidden object for Art1Setting to check against</description>
 				<label>$VAR[Art1Setting]</label>
-				<visible>true</visible>
+				<visible>false</visible>
 				<width>680</width>
 				<height>40</height>
 				<font>font30</font>
@@ -88,13 +93,13 @@
 <!-- 					!$EXP[isInfoDialog] -->
 <!-- 				</visible> -->
 				<width>FullscreenWidth</width>
-				<height>80</height>
+				<height>60</height>
 				<texture>background.png</texture>
 				<colordiffuse>ItemDiffuse</colordiffuse>
 			</control>
 			<control type="image">
 				<width>FullscreenWidth</width>
-				<height>80</height>
+				<height>60</height>
 				<colordiffuse>33000000</colordiffuse>
 				<texture>menu_fo.png</texture>
 				<aspectratio>stretch</aspectratio>
@@ -103,10 +108,12 @@
 			<control type="grouplist">
 				<left>20</left>
 				<top>0</top>
+				<aligny>center</aligny>
 				<width>1200</width>
-				<height>80</height>
+				<height>60</height>
 				<orientation>horizontal</orientation>
-				<itemgap>20</itemgap>
+                <usecontrolcoords>true</usecontrolcoords>
+				<itemgap>5</itemgap>
 
 				<include>BackButton</include>
 				<include>MenuButton</include>
@@ -114,7 +121,7 @@
 
 				<control type="image">
 					<width>60</width>
-					<height>80</height>
+					<height>60</height>
 					<visible>!Skin.HasSetting(Enable.TouchScreen)</visible>
 					<texture colordiffuse="TitleTextColor">$VAR[HeaderIcon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -133,6 +140,7 @@
 <!-- 				</control> -->
 
 				<control type="label">
+				    <left>10</left>
 					<width>auto</width>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -185,8 +193,9 @@
 				<left>1100</left>
 				<top>0</top>
 				<width>800</width>
-				<height>80</height>
+				<height>60</height>
 				<align>right</align>
+				<aligny>center</aligny>
 				<orientation>horizontal</orientation>
 				<itemgap>20</itemgap>
 				<control type="label">
@@ -210,7 +219,7 @@
 				<!-- weather icon when weather addon provies remote image -->
 				<control type="image">
 					<width>30</width>
-					<height>80</height>
+					<height>60</height>
 					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window(weather).Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
 					<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[Window(weather).Property(Current.RemoteIcon)]</texture>
@@ -278,7 +287,7 @@
 				| Player.HasVideo]
 			</visible>
 			<width>FullscreenWidth</width>
-			<top>80</top>
+			<top>70</top>
 			<height>100</height>
 
 			<control type="image">
@@ -295,7 +304,7 @@
 			</control>
 
 			<control type="group">
-				<top>-8</top>
+				<top>5</top>
 				<left>40</left>
 				<right>40</right>
 

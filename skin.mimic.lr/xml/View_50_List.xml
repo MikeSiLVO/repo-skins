@@ -204,8 +204,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -213,8 +213,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>135</left>
@@ -252,8 +252,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="961" />
-							<!-- <param name="OverlayListLeft" value="1081" /> -->
-							<param name="OverlayListTop" value="27" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</itemlayout>
 					
@@ -304,8 +303,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -313,8 +312,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<top>3</top>
@@ -352,7 +351,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="961" />
-							<param name="OverlayListTop" value="27" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</focusedlayout>
 					
@@ -399,8 +398,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -408,8 +407,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>135</left>
@@ -447,7 +446,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="1671" />
-							<param name="OverlayListTop" value="28" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</itemlayout>
 					
@@ -495,8 +494,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -504,8 +503,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<top>3</top>
@@ -543,7 +542,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="1671" />
-							<param name="OverlayListTop" value="28" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</focusedlayout>
 					
@@ -553,16 +552,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -590,7 +589,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="961" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</itemlayout>
 
@@ -603,16 +602,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -640,7 +639,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="961" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</focusedlayout>
 
@@ -650,16 +649,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -687,7 +686,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="1671" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</itemlayout>
 
@@ -700,16 +699,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -737,7 +736,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="1671" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</focusedlayout>
 
@@ -783,8 +782,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -792,8 +791,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>135</left>
@@ -823,7 +822,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="800" />
-							<param name="OverlayListTop" value="28" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</itemlayout>
 
@@ -871,8 +870,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
@@ -880,8 +879,8 @@
 							<top>5</top>
 							<width>35</width>
 							<height>70</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<top>3</top>
@@ -911,7 +910,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="800" />
-							<param name="OverlayListTop" value="28" />
+							<param name="OverlayListTop" value="44" />
 						</include>
 					</focusedlayout>
 
@@ -921,16 +920,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -950,7 +949,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="800" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</itemlayout>
 
@@ -963,16 +962,16 @@
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>I</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Play]</label>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + Player.Paused</visible>
 							<left>20</left>
 							<width>35</width>
 							<height>60</height>
-							<font>IconTiny</font>
-							<label>K</label>
+							<font>IconSmall</font>
+							<label>$VAR[Icon-Pause]</label>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -992,7 +991,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="800" />
-							<param name="OverlayListTop" value="0" />
+							<param name="OverlayListTop" value="14" />
 						</include>
 					</focusedlayout>
 				</control>
